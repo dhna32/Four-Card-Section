@@ -78,7 +78,7 @@ header p{
 @media (min-width: 1400px){
 
     body{
-        width: 100%;
+        width: 100vw;
         max-width: 1440px;
     }
 
