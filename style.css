@@ -1,0 +1,206 @@
+/* ## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- Red: hsl(0, 78%, 62%)
+- Cyan: hsl(180, 62%, 55%)
+- Orange: hsl(34, 97%, 64%)
+- Blue: hsl(212, 86%, 64%)
+
+### Neutral
+
+- Very Dark Blue: hsl(234, 12%, 34%)
+- Grayish Blue: hsl(229, 6%, 66%)
+- Very Light Gray: hsl(0, 0%, 98%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 15px
+
+### Fonts
+
+- Family: [Poppins](https://fonts.google.com/specimen/Poppins)
+- Weights: 200, 400, 600 */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+:root{
+    --red:  hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+    --very--dark--blue: hsl(234, 12%, 34%);
+    --greyish-blue: hsl(229, 6%, 66%);
+    --very-light-gray:hsl(0, 0%, 98%);
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    width: 85%;
+    margin: 0 auto;
+    background-color: var(--very-light-gray);
+    max-width: 340px;
+}
+
+header{
+    width: 95%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 90px;
+    margin-bottom: 80px;
+    color: var(--very--dark--blue);
+}
+
+header h1{
+    font-size: 1.4em;
+    font-weight: 200;
+}
+
+header #tittle-bold{
+    font-weight: 600;
+}
+
+header p{
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--greyish-blue);
+}
+
+@media (min-width: 1400px){
+
+    body{
+        width: 100%;
+        max-width: 1440px;
+    }
+
+    header h1{
+        width: 45%;
+        font-size: 2.3em;
+        margin: 0 auto;
+        line-height: 145%;
+        margin-bottom: 20px;
+    }
+
+    header p{
+        width: 47%;
+        line-height: 145%;
+        font-size: 1em;
+        margin: 0 auto;
+    }
+}
+
+/* main section */
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 217px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    box-shadow: 1px 7px 11px -1px rgba(6,19,50,0.38);
+    margin-bottom: 24px;
+}
+
+.card h2{
+    font-size: 1.3em;
+    color: var(--very--dark--blue);
+    width: 80%;
+    margin-bottom: 0;
+    margin-top: 7%;
+}
+
+.card p{
+    margin-top: 0;
+    font-size: .8em;
+    width: 80%;
+    color: var(--greyish-blue);
+    margin-bottom: 10%;
+}
+
+.card img{
+    align-self: flex-end;
+    margin-right: 10%;
+}
+
+@media (min-width: 1400px){
+
+        main{
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+        }
+
+
+        .card{
+            width: 24%;
+            height: 250px;
+            margin-right: 45px;
+        }
+
+        .container{
+            width: 24%;
+            margin-right: 45px;
+        }
+
+        .container .card{
+            width: 100%;
+            height: 250px;
+        }
+
+        footer{
+            width: 100%;
+            text-align: center;
+            margin: 0 auto;
+            position: absolute;
+            bottom: 0;
+        }
+}
+
+.cyan{
+    border-top: var(--cyan) 5px solid;
+}
+
+.red{
+    border-top: var(--red) 5px solid;
+}
+
+.orange{
+    border-top: var(--orange) 5px solid;
+}
+
+.blue{
+    border-top: var(--blue) 5px solid;
+}
+
+footer{
+    color: var(--greyish-blue);
+    text-align: center;
+    font-size: .7em;
+}
+
+footer a{
+    text-decoration:none;
+    color: var(--very--dark--blue);
+    
+}
+
